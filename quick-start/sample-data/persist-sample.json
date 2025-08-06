@@ -1,34 +1,22 @@
 {
-  "entity_label": "user",
-  "keys_schema": ["user_id"],
-  "feature_groups": [
-    {
-      "label": "user_features",
-      "feature_labels": ["age", "location", "subscription_type"]
-    }
-  ],
   "data": [
     {
-      "key_values": ["user_123"],
+      "key_values": ["10"],
       "feature_values": [
         {
           "values": {
-            "int32_values": [28],
-            "string_values": ["NYC", "premium"]
-          }
-        }
-      ]
-    },
-    {
-      "key_values": ["user_456"],
-      "feature_values": [
-        {
-          "values": {
-            "int32_values": [35],
-            "string_values": ["SF", "basic"]
+            "fp32_values": [12345]
           }
         }
       ]
     }
-  ]
+  ],
+  "entity_label": "catalog",
+  "feature_group_schema": [
+    {
+      "label": "int_id_mapping",
+      "feature_labels": ["cat_id"]
+    }
+  ],
+  "keys_schema": ["catalog_id"]
 }
